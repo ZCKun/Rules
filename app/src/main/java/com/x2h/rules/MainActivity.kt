@@ -206,7 +206,7 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
                 with(preferences.edit()) {
                     // doAsync是创建一个线程
                     doAsync {
-                        // puts的多态函数，在runOnUiThread中调用puts函数，因为Android不允许在线程中操作view
+                        // puts的重载函数，在runOnUiThread中调用puts函数，因为Android不允许在线程中操作view
                         putsOnUi(
                             getString(R.string.init), getString(R.string.request_ing),
                             "#FF0000", "#FF00FF00"
@@ -243,13 +243,13 @@ class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener
     private fun isRooted(): Boolean {
         var root = false
         if (!Shell.SU.run("su").isSuccessful) {
-            Snackbar.make(main_content, "你好像还没赋予Rules Root权限！", Snackbar.LENGTH_LONG)
-                .setAction("点我获取") {
+            Snackbar.make(main_content, getString(R.string.not_root_permission), Snackbar.LENGTH_LONG)
+                .setAction(getString(R.string.click_me_get)) {
                     val cr = Shell.SU.run("su")
                     if (cr.isSuccessful) {
                         root = true
                     } else {
-                        Toast.makeText(applicationContext, "获取root权限失败!", Toast.LENGTH_LONG).show()
+                        Toast.makeText(applicationContext, getString(R.string.get_root_permission_failed), Toast.LENGTH_LONG).show()
                     }
                 }.show()
         } else {
