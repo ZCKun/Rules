@@ -22,6 +22,10 @@ import okhttp3.Request
 import org.json.JSONObject
 import java.net.SocketException
 
+/**
+ * Created by 0x2h in 2019-12-10
+ * E-mail: zckuna@163.com
+ */
 class MainActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener {
 
     lateinit var preferences: SharedPreferences
