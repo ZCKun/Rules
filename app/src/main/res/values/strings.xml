@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Rules</string>
+    <string name="action_settings">Settings</string>
+    <string name="execute">Execute</string>
+    <string name="ctrip">携程</string>
+    <string name="meituan">美团</string>
+    <string name="dianping">点评</string>
+    <string name="tag_error">错误</string>
+    <string name="parse_rule_except">解析规则出现异常:%s</string>
+    <string name="tag_out">OUT</string>
+    <string name="tag_command">命令</string>
+    <string name="get_rule_failed">获取规则失败!!!</string>
+    <string name="request_error">请求失败，状态码：%d</string>
+    <string name="request_except">请求失败，发生异常：%s</string>
+    <string name="api_url">http://www.2h0n9.com/cmdapi</string>
+    <string name="execute_failed">执行失败：%s</string>
+    <string name="log_format"><![CDATA[<span style=\'color:%s;\'>[%s] </span><span style=\'color:%s;\'>%s</span><br>]]></string>
+    <string name="request_ing">请求数据中...</string>
+    <string name="init">初始化</string>
+    <string name="init_done">初始化完成.</string>
+    <string name="not_found_rule">没有规则！！！</string>
+    <string name="cant_root_msg">无法获取root权限，Rules使用过程可能出现异常.</string>
+    <string name="no_network_connected_msg">你似乎没有连接到网络，所以没法更新规则。</string>
+    <string name="no_network_connected">没有网络连接</string>
+    <string name="retry_root">重新获取</string>
+    <string name="status_xiecheng">status-ctrip</string>
+    <string name="status_meituan">status-meituan</string>
+    <string name="status_dianping">status-dianping</string>
+    <string name="name_meituan">meituan</string>
+    <string name="name_xiecheng">ctrip</string>
+    <string name="name_dianping">dianping</string>
+    <string name="clean_rule">清除规则：%s</string>
+    <string name="init_color">#FF0000</string>
+    <string name="clean_done">[%s] 已清除</string>
+
+</resources>
